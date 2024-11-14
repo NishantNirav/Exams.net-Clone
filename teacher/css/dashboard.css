@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    
+}
+main{
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    /* background-color: black; */
+}
+#welcome{
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-color: #ffc107;
+    padding: 0 2rem;
+    color: #007bff;
+    font-size: 1.25rem;
+    font-weight: 800;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#profile-section{
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    padding: 0 1rem;
+    /* background-color: #fff; */
+}
+#top-buttons{
+    background-color: #007bff;
+    width: 100vw;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 2rem;
+}
+.action-buttons{
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    height: 35px;
+    /* background-color: #28a745; */
+    background: linear-gradient(175.6deg, rgb(5, 85, 84) 2%, rgb(64, 224, 208) 98.1%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(161, 243, 179);
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+.action-buttons:hover{
+       background: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+}
+#logout{
+    /* background-color:  */
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+#logout:hover{
+    background: linear-gradient(111.4deg, rgb(246, 4, 26) 0.4%, rgb(251, 139, 34) 100.2%);
+}
+
+#actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:80%;
+}
+#profile-image{
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 600px){
+    #welcome,#profile-section{
+        font-size: 0.85rem;
+        flex-direction: row;
+    }   
+    
+    .action-buttons{
+        font-size: 10px;
+        width: 50px;
+        height: 25px;
+        background: #28a745;
+        padding:0.25rem 1rem;
+        
+    }
+    #logout{
+        background:#dc3545;
+    }
+}
